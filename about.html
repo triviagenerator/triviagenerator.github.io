@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Random Trivia Generator</title>
+  <meta name="description" content="Meet Irene, CEO and Founder of Random Trivia Generator, and learn about our mission to provide clean, free educational tools for everyone." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://triviagenerator.github.io/about" />
+  <meta name="theme-color" content="#f8f3e6" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='4' y='6' width='40' height='30' rx='3' fill='%23f8f3e6' stroke='%23232a3d' stroke-width='3'/%3E%3Cpath d='M14 16h20M14 23h14M14 30h9' stroke='%23232a3d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <style>
+    .about-hero {
+      padding: 80px 0 40px;
+      text-align: center;
+      border-bottom: 1px dashed var(--line);
+    }
+    .about-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 20px;
+    }
+    .about-hero p {
+      font-size: 1.25rem;
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--ink-soft);
+    }
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      padding: 80px 0;
+      align-items: start;
+    }
+    .story-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 24px;
+    }
+    .story-content p {
+      font-size: 1.1rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .founder-card {
+      background: var(--paper);
+      border: 3px solid var(--ink);
+      border-radius: var(--radius-card);
+      padding: 40px;
+      box-shadow: 8px 8px 0 var(--ink);
+      position: sticky;
+      top: 40px;
+    }
+    .founder-badge {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .founder-name {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      margin-bottom: 4px;
+    }
+    .founder-title {
+      font-size: 1.1rem;
+      color: var(--ink-faint);
+      margin-bottom: 24px;
+      display: block;
+    }
+    .founder-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--teal-deep);
+      border-left: 3px solid var(--amber);
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 900px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .founder-card {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="about-hero" aria-label="About Hero">
+      <div class="container">
+        <span class="eyebrow">Our Mission</span>
+        <h1>Curiosity, Simplified.</h1>
+        <p>We build streamlined, web-based utility apps designed to test your general knowledge instantly without cookies, paywalls, or endless registration tracks.</p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Founder and Details">
+      <div class="about-layout">
+        
+        <div class="story-content">
+          <h2>Why Random Trivia?</h2>
+          <p>The modern web has become heavy, packed with distracting sign-up popups, massive dynamic code frameworks, and endless tracking prompts. We designed this Random Trivia Generator to challenge that philosophy.</p>
+          <p>By leveraging lightweight setups and a fast front-end stack, our application loads within fractions of a second to bring immediate utility directly to teachers, remote team leaders, and lifelong quiz enthusiasts alike.</p>
+          
+          <h2>Our Core Values</h2>
+          <p><strong>Universal Accessibility:</strong> Education and self-assessment tools should be fully functional regardless of individual hardware limits, internet speeds, or geography.</p>
+          <p><strong>Privacy Integrity:</strong> Your quiz performance belongs to you. We hold zero interest in harvesting email identities, processing personal analytics data, or generating persistent consumer profiles.</p>
+        </div>
+
+        <div class="founder-card">
+          <span class="founder-badge">Leadership</span>
+          <h2 class="founder-name">Irene</h2>
+          <span class="founder-title">CEO &amp; Founder</span>
+          <p class="founder-quote">"We wanted to build an environment where clicking 'Generate' brings instant value without requiring structural sign-ins or personal transaction records."</p>
+          <p style="color: var(--ink-soft); margin-bottom: 0;">Under Irene's leadership, our team continues to build accessible, browser-native applications designed to make learning fluid and stress-free.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
