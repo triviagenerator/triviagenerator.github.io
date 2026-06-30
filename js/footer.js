@@ -48,7 +48,7 @@ function renderFooter() {
         </nav>
 
        <nav class="footer-col" aria-label="Use cases">
-          <h3>Use Cases</h3>
+          <h3>Pages</h3>
           <ul>
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/terms">Terms of Use</a></li>
