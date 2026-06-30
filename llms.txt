@@ -1,0 +1,28 @@
+# Random Trivia Generator
+
+> A free, instant random trivia and quiz question generator covering Science, History, Geography, Pop Culture, Sports, Literature & Arts, Technology, and General Knowledge. Perfect for classrooms, game nights, icebreakers, and daily knowledge practice. No sign-up required.
+
+## Quick Links
+- [Generator](https://triviagenerator.github.io/#generator): Draw a random trivia question instantly. Filter by category and difficulty.
+- [Categories](https://triviagenerator.github.io/#categories): Browse trivia questions sorted by topic — Science, History, Geography, Pop Culture, Sports, Literature & Arts, Technology, and General Knowledge.
+- [How It Works](https://triviagenerator.github.io/#how-it-works): Three steps — set filters, generate the card, answer & learn with a bonus fact.
+- [Use Cases](https://triviagenerator.github.io/#use-cases): Classroom warm-ups, game night backup decks, meeting icebreakers, and daily self-study.
+- [FAQ](https://triviagenerator.github.io/#faq): Frequently asked questions about the generator.
+
+## Key Features
+- **8 trivia categories** — Science & Nature, History, Geography, Pop Culture, Sports, Literature & Arts, Technology, and General Knowledge[reference:0][reference:1]
+- **3 difficulty levels** — Easy, Medium, and Hard[reference:2][reference:3]
+- **Bonus fact with every answer** — Each question includes extra context, making it a quick study tool[reference:4]
+- **Works on any device** — No download required, runs directly in any modern web browser[reference:5][reference:6]
+
+## Sample Trivia Questions
+- What is the chemical symbol for gold? — Science & Nature · Medium[reference:7]
+- Who painted the ceiling of the Sistine Chapel? — History · Hard[reference:8]
+- Which desert is the largest hot desert on Earth? — Geography · Medium[reference:9]
+- In golf, what term describes one stroke under par? — Sports · Hard[reference:10]
+
+## FAQ
+- **Is it free?** Yes, completely free, no sign-up required, runs instantly in your browser[reference:11]
+- **Can I filter by difficulty?** Yes, each question is tagged Easy, Medium, or Hard[reference:12]
+- **Can I use it for classrooms or parties?** Absolutely — teachers use it for warm-ups, hosts use it for game nights and icebreakers[reference:13]
+- **Are new questions added?** Yes, the question bank is reviewed and expanded periodically[reference:14]
