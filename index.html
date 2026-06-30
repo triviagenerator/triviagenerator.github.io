@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Trivia Generator — Free Trivia & Quiz Questions Online</title>
+  <meta name="description" content="Generate random trivia questions instantly with our free Random Trivia Generator. Choose from Science, History, Geography, Pop Culture, Sports & more. Perfect for classrooms, game nights, and quiz lovers." />
+  <meta name="keywords" content="random trivia generator, trivia generator, trivia questions generator, free trivia generator, random question generator, quiz generator, trivia questions, general knowledge quiz, trivia by category, multiple choice trivia" />
+  <meta name="author" content="Trivia Generator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://triviagenerator.github.io/" />
+  <meta name="theme-color" content="#f8f3e6" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Random Trivia Generator — Free Trivia & Quiz Questions Online" />
+  <meta property="og:description" content="Instantly generate random trivia questions across Science, History, Geography, Pop Culture, Sports, and more. Free, fast, and no sign-up required." />
+  <meta property="og:url" content="https://triviagenerator.github.io/" />
+  <meta property="og:site_name" content="Trivia Generator" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Random Trivia Generator — Free Trivia & Quiz Questions Online" />
+  <meta name="twitter:description" content="Generate random trivia questions across 8 categories. Free, instant, no sign-up. Great for classrooms, parties, and game nights." />
+
+  <!-- Favicon (inline SVG, index-card icon) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='4' y='6' width='40' height='30' rx='3' fill='%23f8f3e6' stroke='%23232a3d' stroke-width='3'/%3E%3Cpath d='M14 16h20M14 23h14M14 30h9' stroke='%23232a3d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Schema.org: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Trivia Generator",
+    "url": "https://triviagenerator.github.io/",
+    "description": "A free random trivia and quiz question generator covering Science, History, Geography, Pop Culture, Sports, Literature, Technology, and General Knowledge.",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "Any (Web Browser)",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "browserRequirements": "Requires JavaScript",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the Random Trivia Generator free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The trivia generator is completely free, requires no sign-up, and runs instantly in your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many trivia categories are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Questions span eight categories: Science & Nature, History, Geography, Pop Culture, Sports, Literature & Arts, Technology, and General Knowledge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I filter trivia questions by difficulty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each question is tagged Easy, Medium, or Hard, and you can filter the generator to match the difficulty you want."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this trivia generator for classroom or party games?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Teachers use it for warm-up quizzes, and hosts use it for game nights, icebreakers, and trivia parties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to download an app to use the generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No download is required. The generator works directly in any modern web browser on desktop or mobile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are new trivia questions added regularly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The question bank is reviewed and expanded periodically to keep the random trivia generator fresh and accurate."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <!-- Header is injected by js/header.js -->
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO
+    ============================================================= -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Free &middot; Instant &middot; No Sign-Up</span>
+          <h1>A <em>random trivia generator</em> for curious minds</h1>
+          <p class="lede">
+            Draw a random trivia question in one click. Pick a category, set a difficulty,
+            and the generator pulls a fresh question from Science, History, Geography,
+            Pop Culture, Sports, and more — perfect for classrooms, quiz nights, and
+            anyone who loves a good question.
+          </p>
+          <div class="hero-actions">
+            <a href="#generator" class="btn btn-primary">Generate a Question</a>
+            <a href="#categories" class="btn btn-ghost">Browse Categories</a>
+          </div>
+          <div class="hero-points">
+            <span class="hero-point"><span class="dot"></span>8 trivia categories</span>
+            <span class="hero-point"><span class="dot"></span>3 difficulty levels</span>
+            <span class="hero-point"><span class="dot"></span>Works on any device</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+          <div class="deck-card deck-1"></div>
+          <div class="deck-card deck-2"></div>
+          <div class="deck-card deck-3">
+            <span class="stamp">Card 014 · Geography</span>
+            <p class="deck-q">Which river is the longest in the world?</p>
+            <span class="deck-tag">Tap to reveal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. GENERATOR — signature interactive element
+    ============================================================= -->
+    <section class="generator-section" id="generator" aria-label="Trivia question generator">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="eyebrow">The Generator</span>
+          <h2>Pull a random trivia question</h2>
+          <p>Choose a category and difficulty, or leave them on "All" for a true surprise.</p>
+        </div>
+
+        <div class="generator-wrap">
+          <div class="generator-controls reveal">
+            <label class="field-select">
+              <span class="visually-hidden">Category</span>
+              <select id="categorySelect" aria-label="Trivia category">
+                <option value="all">🎲 All Categories</option>
+              </select>
+            </label>
+            <label class="field-select">
+              <span class="visually-hidden">Difficulty</span>
+              <select id="difficultySelect" aria-label="Difficulty level">
+                <option value="all">All Difficulties</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </label>
+            <button id="generateBtn" class="btn btn-primary" type="button">Generate Trivia</button>
+          </div>
+
+          <div class="flashcard reveal reveal-delay-1" id="flashcard">
+            <div class="flashcard-inner" id="flashcardInner">
+              <div class="flashcard-face flashcard-front">
+                <div class="punch" aria-hidden="true"></div>
+                <h3>Your question card is blank</h3>
+                <p>Click "Generate Trivia" above to draw your first random question.</p>
+              </div>
+              <div class="flashcard-face flashcard-back" id="flashcardBack">
+                <!-- Populated by app.js -->
+              </div>
+            </div>
+          </div>
+
+          <div class="generator-scoreboard reveal reveal-delay-2">
+            <div class="score-pill">
+              <span class="score-value" id="statAsked">0</span>
+              <span class="score-label">Asked</span>
+            </div>
+            <div class="score-pill">
+              <span class="score-value" id="statCorrect">0</span>
+              <span class="score-label">Correct</span>
+            </div>
+            <div class="score-pill">
+              <span class="score-value" id="statAccuracy">0%</span>
+              <span class="score-label">Accuracy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. CATEGORIES
+    ============================================================= -->
+    <section id="categories" aria-label="Trivia categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Browse by Topic</span>
+          <h2>Trivia questions sorted by category</h2>
+          <p>
+            Every card in the index is tagged and filed. Click a category to jump straight
+            to the generator and draw a question from that topic.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <button class="category-card reveal" data-tab="01" data-category-card="science" type="button">
+            <span class="category-icon">🧪</span>
+            <h3>Science &amp; Nature</h3>
+            <p>From the human body to outer space — physics, biology, and chemistry trivia.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-1" data-tab="02" data-category-card="history" type="button">
+            <span class="category-icon">🏛️</span>
+            <h3>History</h3>
+            <p>Ancient civilizations, world wars, and the people who shaped the past.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-2" data-tab="03" data-category-card="geography" type="button">
+            <span class="category-icon">🌍</span>
+            <h3>Geography</h3>
+            <p>Capitals, rivers, mountains, and borders from every corner of the map.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-3" data-tab="04" data-category-card="pop" type="button">
+            <span class="category-icon">🎬</span>
+            <h3>Pop Culture</h3>
+            <p>Movies, music, and television — trivia for the screen and stage obsessed.</p>
+          </button>
+          <button class="category-card reveal" data-tab="05" data-category-card="sports" type="button">
+            <span class="category-icon">🏅</span>
+            <h3>Sports</h3>
+            <p>Olympic moments, league records, and rules across every major sport.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-1" data-tab="06" data-category-card="arts" type="button">
+            <span class="category-icon">📚</span>
+            <h3>Literature &amp; Arts</h3>
+            <p>Authors, paintings, and the stories that have shaped culture for centuries.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-2" data-tab="07" data-category-card="tech" type="button">
+            <span class="category-icon">💻</span>
+            <h3>Technology</h3>
+            <p>Inventions, companies, and the milestones behind modern computing.</p>
+          </button>
+          <button class="category-card reveal reveal-delay-3" data-tab="08" data-category-card="general" type="button">
+            <span class="category-icon">🎓</span>
+            <h3>General Knowledge</h3>
+            <p>A mixed file drawer of facts that do not fit anywhere else — and are still fun.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. HOW IT WORKS
+    ============================================================= -->
+    <section id="how-it-works" aria-label="How the trivia generator works">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>Three steps to your next trivia question</h2>
+        </div>
+
+        <div class="steps-row">
+          <div class="step-card reveal">
+            <div class="step-index">1</div>
+            <h3>Set your filters</h3>
+            <p>Pick a category like History or Science, and a difficulty from Easy to Hard — or leave both open for a fully random draw.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-1">
+            <div class="step-index">2</div>
+            <h3>Generate the card</h3>
+            <p>Click "Generate Trivia" and the card flips to reveal a multiple-choice question pulled at random from the matching pool.</p>
+          </div>
+          <div class="step-card reveal reveal-delay-2">
+            <div class="step-index">3</div>
+            <h3>Answer &amp; learn</h3>
+            <p>Pick an answer to see if you're correct, read a quick bonus fact, then generate another question to keep the streak going.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. STATS BAND
+    ============================================================= -->
+    <section class="stats-band" aria-label="Trivia generator statistics">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="eyebrow">By the Numbers</span>
+          <h2>A growing library of random trivia</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-block reveal">
+            <span class="stat-number" data-count-to="8">0</span>
+            <span class="stat-label">Trivia Categories</span>
+          </div>
+          <div class="stat-block reveal reveal-delay-1">
+            <span class="stat-number" data-count-to="3">0</span>
+            <span class="stat-label">Difficulty Levels</span>
+          </div>
+          <div class="stat-block reveal reveal-delay-2">
+            <span class="stat-number" data-count-to="100">0</span>
+            <span class="stat-label">% Free to Use</span>
+          </div>
+          <div class="stat-block reveal reveal-delay-3">
+            <span class="stat-number" data-count-to="0">0</span>
+            <span class="stat-label">Sign-Ups Required</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. BENEFITS / SEO TEXT CONTENT
+    ============================================================= -->
+    <section id="benefits" aria-label="Benefits of using a trivia generator">
+      <div class="container benefits-grid">
+        <div class="reveal">
+          <span class="eyebrow">Why Use a Trivia Generator</span>
+          <h2>Random questions, built for real learning and real fun</h2>
+          <p>
+            A good random trivia generator does more than spit out facts — it should
+            surface questions that are accurate, varied, and genuinely interesting to
+            answer. This trivia questions generator was built around that idea: every
+            entry is written to teach you something small, even if you get it wrong.
+          </p>
+
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+              <div class="benefit-copy">
+                <h3>Instant random questions</h3>
+                <p>No loading screens or accounts — click once and a random trivia question appears immediately.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🎯</div>
+              <div class="benefit-copy">
+                <h3>Filter by category and difficulty</h3>
+                <p>Narrow the question generator down to one topic, or set the difficulty to match your group.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">📖</div>
+              <div class="benefit-copy">
+                <h3>A bonus fact with every answer</h3>
+                <p>Each question includes extra context after you answer, so the trivia generator doubles as a quick study tool.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="benefits-aside reveal reveal-delay-1">
+          <h3>Built for every kind of trivia fan</h3>
+          <p>This free trivia generator is designed to work well for:</p>
+          <ul>
+            <li>Teachers building quick classroom quiz questions</li>
+            <li>Trivia night hosts who need a backup question bank</li>
+            <li>Friends and families looking for game night material</li>
+            <li>Students using random questions to self-test</li>
+            <li>Anyone who simply enjoys learning a new fact a day</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. USE CASES
+    ============================================================= -->
+    <section id="use-cases" aria-label="Trivia generator use cases">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Where It Fits</span>
+          <h2>Use cases for the random question generator</h2>
+          <p>From the classroom to the living room, here's where people turn to this trivia generator most.</p>
+        </div>
+
+        <div class="use-cases-grid">
+          <div class="use-case-card reveal">
+            <span class="uc-tag">Classroom</span>
+            <h3>Warm-up quiz questions</h3>
+            <p>Open class with a quick random trivia question to get students thinking before the lesson starts.</p>
+          </div>
+          <div class="use-case-card reveal reveal-delay-1">
+            <span class="uc-tag">Game Night</span>
+            <h3>Trivia night backup deck</h3>
+            <p>Keep the generator open as an endless supply of multiple-choice questions when your prepared list runs out.</p>
+          </div>
+          <div class="use-case-card reveal reveal-delay-2">
+            <span class="uc-tag">Icebreakers</span>
+            <h3>Meeting &amp; party icebreakers</h3>
+            <p>Use a random question generator to break the ice at team meetings, parties, or first-day introductions.</p>
+          </div>
+          <div class="use-case-card reveal reveal-delay-3">
+            <span class="uc-tag">Self-Study</span>
+            <h3>Daily knowledge practice</h3>
+            <p>Generate a few trivia questions a day across categories to build broad general knowledge over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. SAMPLE QUESTIONS STRIP
+    ============================================================= -->
+    <section class="sample-strip" aria-label="Sample trivia questions">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">A Peek Inside</span>
+          <h2>Sample trivia questions from the deck</h2>
+          <p>A small preview of the kind of random trivia questions waiting in the generator above.</p>
+        </div>
+
+        <div class="sample-grid">
+          <div class="sample-item reveal">
+            <span class="sample-num">01</span>
+            <p>What is the chemical symbol for gold?
+              <span>Science &amp; Nature · Medium</span>
+            </p>
+          </div>
+          <div class="sample-item reveal reveal-delay-1">
+            <span class="sample-num">02</span>
+            <p>Who painted the ceiling of the Sistine Chapel?
+              <span>History · Hard</span>
+            </p>
+          </div>
+          <div class="sample-item reveal reveal-delay-2">
+            <span class="sample-num">03</span>
+            <p>Which desert is the largest hot desert on Earth?
+              <span>Geography · Medium</span>
+            </p>
+          </div>
+          <div class="sample-item reveal reveal-delay-3">
+            <span class="sample-num">04</span>
+            <p>In golf, what term describes one stroke under par?
+              <span>Sports · Hard</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. FAQ
+    ============================================================= -->
+    <section id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open reveal">
+            <button class="faq-question" type="button">
+              Is the Random Trivia Generator free to use?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. The trivia generator is completely free, requires no sign-up, and runs instantly in your browser.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              How many trivia categories are available?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Questions span eight categories: Science &amp; Nature, History, Geography, Pop Culture, Sports, Literature &amp; Arts, Technology, and General Knowledge.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              Can I filter trivia questions by difficulty?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Each question is tagged Easy, Medium, or Hard, and you can filter the generator to match the difficulty you want.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              Can I use this trivia generator for classroom or party games?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Teachers use it for warm-up quizzes, and hosts use it for game nights, icebreakers, and trivia parties.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              Do I need to download an app to use the generator?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No download is required. The generator works directly in any modern web browser on desktop or mobile.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              Are new trivia questions added regularly?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>The question bank is reviewed and expanded periodically to keep the random trivia generator fresh and accurate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. CTA
+    ============================================================= -->
+    <section aria-label="Call to action">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2>Ready for your next random trivia question?</h2>
+          <p>No sign-up. No clutter. Just a fresh question, every time you click.</p>
+          <a href="#generator" class="btn btn-secondary">Generate Trivia Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer is injected by js/footer.js -->
+  <div id="site-footer"></div>
+
+  <script src="js/trivia-data.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
