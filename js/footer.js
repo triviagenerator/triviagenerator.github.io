@@ -47,13 +47,16 @@ function renderFooter() {
           </ul>
         </nav>
 
-        <div class="footer-col">
-          <h3>About</h3>
-          <p class="footer-about">
-            Built for teachers, hosts, and trivia lovers. No sign-up, no ratings,
-            just instant random questions — refresh and play.
-          </p>
-        </div>
+       <nav class="footer-col" aria-label="Use cases">
+          <h3>Use Cases</h3>
+          <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cookies">Cookies Policy</a></li>
+          </ul>
+        </nav>
       </div>
 
       <div class="container footer-bottom">
