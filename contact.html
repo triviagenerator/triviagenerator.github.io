@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Random Trivia Generator</title>
+  <meta name="description" content="Get in touch with the Random Trivia Generator team. Submit question suggestions or system feature requests." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://triviagenerator.github.io/contact" />
+  <meta name="theme-color" content="#f8f3e6" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='4' y='6' width='40' height='30' rx='3' fill='%23f8f3e6' stroke='%23232a3d' stroke-width='3'/%3E%3Cpath d='M14 16h20M14 23h14M14 30h9' stroke='%23232a3d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      padding: 60px 0 96px;
+      align-items: start;
+    }
+    .contact-info h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      font-size: 1.1rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .contact-channels {
+      border-top: 1px dashed var(--line);
+      padding-top: 30px;
+    }
+    .channel-item {
+      margin-bottom: 24px;
+    }
+    .channel-label {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .channel-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--teal-deep);
+    }
+    .contact-form-wrapper {
+      background: var(--paper);
+      border: 3px solid var(--ink);
+      border-radius: var(--radius-card);
+      padding: 40px;
+      box-shadow: 8px 8px 0 var(--ink);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    .form-control {
+      width: 100%;
+      background: var(--cream);
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--ink);
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+    .form-control:focus {
+      outline: none;
+      background: var(--paper);
+      border-color: var(--teal);
+    }
+    textarea.form-control {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-submit-btn {
+      width: 100%;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      background: var(--amber);
+      color: var(--ink);
+      border: 3px solid var(--ink);
+      border-radius: var(--radius-pill);
+      padding: 14px 28px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: transform 0.1s, box-shadow 0.1s;
+      box-shadow: 0 4px 0 var(--ink);
+    }
+    .form-submit-btn:hover {
+      background: var(--amber-deep);
+    }
+    .form-submit-btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 0 0 var(--ink);
+    }
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info">
+          <span class="eyebrow">Connect</span>
+          <h1>Get In Touch</h1>
+          <p>Have an interesting trivia question suggestion? Spotted a factual typo in one of our categories? Or want to talk about utilizing our platform for an educational community project? Drop us a line below.</p>
+          
+          <div class="contact-channels">
+            <div class="channel-item">
+              <span class="channel-label">Founding Office Email</span>
+              <span class="channel-value">irene@triviagenerator.github.io</span>
+            </div>
+            <div class="channel-item">
+              <span class="channel-label">Response Framework</span>
+              <span class="channel-value">Within 48 Business Hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Irene and the team.'); this.reset();">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Topic</label>
+              <select id="contact-subject" class="form-control" required>
+                <option value="suggestion">Trivia Question Suggestion</option>
+                <option value="bug">Report an Error / Typo</option>
+                <option value="partnership">Educational Partnership</option>
+                <option value="other">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
